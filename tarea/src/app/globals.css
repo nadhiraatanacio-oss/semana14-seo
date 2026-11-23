@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1c1c1c;
+  --color-ink-soft: #2a2a2a;
+  --color-forest: #15453a;
+  --color-mint: #2fd3a0;
+  --color-mint-dark: #0c8d6b;
+  --color-gold: #f5b942;
+  --color-cream: #f4f5ef;
+  --color-rose: #e8375f;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-mint);
+  color: var(--color-ink);
+}
+
+.shape-mint {
+  background: linear-gradient(135deg, #5ff0c3 0%, #2fd3a0 45%, #0c8d6b 100%);
+}
+
+.full-bleed {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+}
